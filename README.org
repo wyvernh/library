@@ -2,12 +2,12 @@
 #+description: A library catalogue management tool
 #+author: Matthew Hinton
 
-* Compilation
+** Compilation
 #+begin_src bash
   gcc -std=c18 -o library main.c macros.c library.c better_string.c tree.c
 #+end_src
 
-* Usage
+** Usage
 #+begin_src bash
   ./library [filename]
 #+end_src
