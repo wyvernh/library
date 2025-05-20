@@ -1,0 +1,16 @@
+#+title: Library
+#+description: A library catalogue management tool
+#+author: Matthew Hinton
+
+* Compilation
+#+begin_src bash
+  gcc -std=c18 -o library main.c macros.c library.c better_string.c tree.c
+#+end_src
+
+* Usage
+#+begin_src bash
+  ./library [filename]
+#+end_src
+
+If a filename not provided, the program will ask for one to store the new catalogue.
+Every change to the catalogue made in the program is immediately backed up in the file. Type 'help' at the command prompt for command options.

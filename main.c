@@ -52,11 +52,18 @@ void print_catalogue(const library_t *library) {
   catalogue_print_all_categories(library->catalogue);
 }
 
+void print_help() {
+  printf("\n");
+  printf("\n");
+}
+
 bool command(const string_t *cmd, library_t *library, FILE *f) {
   if (cmd->len == 0) return false;
   const char *buf = (char *)cmd->value;
   if (strcmp(buf, "q") == 0 || strcmp(buf, "quit") == 0) {
     return true;
+  } else if (strcmp(buf, "h") == 0 || strcmp(buf, "help") == 0) {
+    print_help();
   } else if (strcmp(buf, "b") == 0 || strcmp(buf, "books") == 0) {
     printf("%sBooks:%s\n", BWHT, CRESET);
     catalogue_print_all_books(library->catalogue);
@@ -87,6 +94,10 @@ bool command(const string_t *cmd, library_t *library, FILE *f) {
   } else if (strcmp(buf, "c") == 0 || strcmp(buf, "cat") == 0) {
     printf("%sCategories:%s\n", BWHT, CRESET);
     catalogue_print_all_categories(library->catalogue);
+  } else if (strcmp(buf, "add") == 0) {
+    add_book(library, f);
+  } else if (strcmp(buf, "addbooks") == 0 || strcmp(buf, "add books")) {
+    add_books(library, f);
   } else {
     printf("\nUnknown command\n");
   }
