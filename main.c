@@ -96,7 +96,7 @@ bool command(const string_t *cmd, library_t *library, FILE *f) {
     catalogue_print_all_categories(library->catalogue);
   } else if (strcmp(buf, "add") == 0) {
     add_book(library, f);
-  } else if (strcmp(buf, "addbooks") == 0 || strcmp(buf, "add books")) {
+  } else if (strcmp(buf, "addbooks") == 0 || strcmp(buf, "add books") == 0) {
     add_books(library, f);
   } else {
     printf("\nUnknown command\n");

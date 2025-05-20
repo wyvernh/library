@@ -1,0 +1,44 @@
+Partial Differential Equations;;Lawrence C. Evans;American Mathematical Society;Pender;1998;Mathematics
+Complex Variables and Applications;;Ruel V. Churchill,James Ward Brown;McGraw-Hill Book Company;Pender;1984;Mathematics
+A Course of Modern Analysis;;E. T. Whittaker,G. N. Watson;Cambridge University Press;Pender;1962;Mathematics
+An Introduction to Random Matrices;;Greg W. Anderson,Alice Guionnet,Ofer Zeitouni;Cambridge University Press;Pender;2010;Mathematics
+Directed Algebraic Topology;Models of Non-Reversible Worlds;Marco Grandis;Cambridge University Press;Pender;2009;Mathematics
+A = B;;Marko Petkovsek,Herbert S. Wilf,Doron Zeilberger;A K Peters;Pender;1996;Mathematics
+Ingenuity in Mathematics;;Ross Honsberger;The Mathematical Association of America;Pender;1970;Mathematics
+An Introduction to the Foundations and Fundamental Concepts of Mathematics;;Howard Eves,Carroll V. Newson;Holt, Rinehart and Winston;Pender;1965;Mathematics
+The Thirteen Books of Euclid's Elements;translated with introduction and commentary by Sir Thomas L. Heath, second edition unabridged, Vol. 2;Euclid,Thomas L. Heath;Dover Publications;Pender;1956;Mathematics
+Mathematics from the Birth of Numbers;;Jan Gullberg;W. W. Norton & Company;Pender;1997;Mathematics
+Sciencia;;John Martineau,Burkard Polster,Matthew Watkins,Matt Tweed,Gerard Cheshire,Moff Betts;Wooden Books;Pender;2011;
+Quadrivium;the four classical liberal arts of number, geometry, music, & cosmology;John Martineau,Keith Critchlow,Miranda Lundy,Daud Sutton,Anthony Ashton;Wooden Books;Pender;2010;
+The Science Book;big ideas simply explained;;Dorling Kindersley;Pender;2014;PopSci
+The Dangerous Book for Boys;;Conn Iggulden,Hal Iggulden;Harper Collins;Pender;2006;Kids
+An Astronaut's Guide to Life on Earth;;Chris Hadfield;Random House Canada;Pender;2013;Canadian
+The Graphic Work of M. C. Escher;;Maurits C. Escher;Hawthorn Books;Pender;1967;Art
+The Prophet;;Kahlil Gibran;Alfred A. Knopf;Pender;2018;Poetry
+Thirty-Eight Latin Stories;;Anne H. Groton,James M. May;Bolchazy-Carducci Publishers;Pender Island;2004;Latin
+Workbook for Wheelock's Latin;The Classic Introductory Latin Course, Based on Ancient Authors;Paul T. Comeau,Richard A. LaFleur;Harper Collins;Pender;2005;Latin
+Wheelock's Latin;The Classic Introductory Latin Course, Based on the Writings of Cicero, Vergil, and Other Major Roman Authors;Frederic M. Wheelock,Richard A. LaFleur;Harper Collins;Pender;2011;Latin
+Third-Degree Brown Belt Kakuro;;;Puzzlewright Press;Pender;2016;Games
+Second-Degree Brown Belt Kakuro;;;Puzzlewright Press;Pender;2012;Games
+Chess in 30 minutes;;Edward Young;E. S. Lowe;Pender;1955;Games
+1001 Chess Exercises for Beginners;The tactics workbook that explains the basic concepts, too!;Franco Masetti,Roberto Messa;New In Chess;Pender;2012;Games
+Mastering Tak;A foundation for success;Bill Leighton;Bill Leighton;Pender;2017;Games
+How to Make simple boats;;Eve Barwell,Keith Kail;Studio Vista;Pender;1973;Kids
+The Story of Inventions;;Anna Claybourne,Adam Larkum;Usborne Publishing;Pender;2007;Kids
+5 Tremendously Silly Munsch Stories;;Robert Munsch,Michael Martchenko;Annick Press;Pender;2023;Kids
+The Digging Leviathan;;James P. Blaylock;The Berkley Publishing Group;Pender;1984;Fiction,SciFi
+The Physics of Superheroes;;James Kakalios;Avery;Pender;2009;Physics,PopSci
+Foundation's Edge;The fourth novel in the Foundation Series;Isaac Asimov;Nightfall;Pender;1982;Fiction,SciFi
+Here's Looking at Euclid;a surprising excursion through the astonishing world of math;Alex Bellos;Simon & Schuster;Pender;2010;PopSci,Mathematics
+Taming the Infinite;the story of mathematics from the first numbers to chaos theory;Ian Stewart;Quercus;Pender;2007;PopSci,Mathematics
+Weather and Forecasting;MacMillan Field Guides;Storm Dunlop,Francis Wilson;The Hamlyn Publishing Group;Pender;1982;Weather
+The Surface Climates of Canada;;William G. Bailey,Timothy R. Oke,Wayne R. Rouse;McGill-Queen's University Press;Pender;1997;Weather
+The Annapolis Book of Seamanship;;John Rousmaniere,Mark Smith;Simon & Schuster;Pender;1999;Sailing
+Singlehanded Sailing;thoughts, tips, techniques & tactics;Andrew Evans;McGraw-Hill Education;Pender;2015;Sailing,Canadian
+The Handbook of Sailing;a complete guide to all sailing techniques and procedures for the beginner and experienced sailor;Bob Bond;Alfred A. Knopf;Pender;1992;Sailing
+The Complete Sailor;Learning the Art of Sailing;David Seidman;International Marine;Pender;1995;Sailing
+Royce's Sailing Illustrated;the best of all sailing worlds;Patrick M. Royce;General Publishing Company;Pender;1988;Sailing
+The Complete Sailor;Learning the Art of Sailing;David Seidman;International Marine;Pender;1995;Sailing
+The Handbook of Sailing;a complete guide to all sailing techniques and procedures for the beginner and experienced sailor;Bob Bond;Alfred A. Knopf;Pender;1992;Sailing
+Singlehanded Sailing;thoughts, tips, techniques & tactics;Andrew Evans;McGraw-Hill Education;Pender;2015;Sailing,Canadian
+The Annapolis Book of Seamanship;;John Rousmaniere,Mark Smith;Simon & Schuster;Pender;1999;Sailing
