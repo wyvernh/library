@@ -171,4 +171,12 @@ void catalogue_write_to_file(catalogue_t *c, string_t *filename);
 
 int catalogue_read_from_file(catalogue_t *c, string_t *filename);
 
+void catalogue_search(catalogue_t *c);
+
+void catalogue_search_avl(const avl_t *avl);
+
+void print_search_help();
+
+void print_help();
+
 #endif // LIBRARY_H_

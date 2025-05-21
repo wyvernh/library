@@ -1,3 +1,4 @@
+#include <string.h>
 #include "library.h"
 #include "tree.h"
 #include "macros.h"
@@ -178,6 +179,7 @@ void print_categories(stack_t *cat) {
 
 void print_book(const book_t *book) {
   if (book == NULL) die("print_book(): book was null");
+  if (book->removed) return;
   printf("    Title: ");
   print(book->title);
   printf("\n Subtitle: ");
@@ -642,4 +644,91 @@ int catalogue_read_from_file(catalogue_t *c, string_t *filename) {
   }
   fclose(f);
   return 0;
+}
+
+// implement searching by year
+void catalogue_search(catalogue_t *c) {
+  printf("Search area: ");
+  string_t *area = file_read_line_alloc(stdin);
+  trunc_string(area);
+  if (area->len == 0) return;
+  const char *buf = (char *)area->value;
+  if (strcmp(buf, "h") == 0 || strcmp(buf, "help") == 0) {
+    print_search_help();
+  } else if (strcmp(buf, "t") == 0 || strcmp(buf, "title") == 0) {
+    string_free(area);
+    printf("Search titles: ");
+    catalogue_search_avl(c->titles);
+  } else if (strcmp(buf, "st") == 0 || strcmp(buf, "subtitle") == 0) {
+    string_free(area);
+    printf("Search subtitles: ");
+    catalogue_search_avl(c->subtitles);
+  } else if (strcmp(buf, "a") == 0 || strcmp(buf, "author") == 0) {
+    string_free(area);
+    printf("Search authors: ");
+    catalogue_search_avl(c->authors);
+  } else if (strcmp(buf, "l") == 0 || strcmp(buf, "lastname") == 0) {
+    string_free(area);
+    printf("Search authors: ");
+    catalogue_search_avl(c->authors_by_last_name);
+  } else if (strcmp(buf, "al") == 0 || strcmp(buf, "authorlast") == 0) {
+    string_free(area);
+    printf("Search author last names: ");
+    catalogue_search_avl(c->author_last_names);
+  } else if (strcmp(buf, "af") == 0 || strcmp(buf, "authorfirst") == 0) {
+    string_free(area);
+    printf("Search author first names: ");
+    catalogue_search_avl(c->author_first_names);
+  } else if (strcmp(buf, "p") == 0 || strcmp(buf, "pub") == 0) {
+    string_free(area);
+    printf("Search publishers: ");
+    catalogue_search_avl(c->publishers);
+  } else if (strcmp(buf, "y") == 0 || strcmp(buf, "year") == 0) {
+    printf("Year not implemented yet\n");
+  } else if (strcmp(buf, "c") == 0 || strcmp(buf, "cat") == 0) {
+    string_free(area);
+    printf("Search categories: ");
+    catalogue_search_avl(c->categories);
+  } else if (strcmp(buf, "lc") == 0 || strcmp(buf, "location") == 0) {
+    string_free(area);
+    printf("Search locations: ");
+    catalogue_search_avl(c->locations);
+  } else {
+    printf("\nUnknown search area\n");
+  }
+}
+
+void catalogue_search_avl(const avl_t *avl) {
+  string_t *s = file_read_line_alloc(stdin);
+  trunc_string(s);
+  key_t key = key_from_string(s);
+  stack_t *stack = avl_get(avl, &key);
+  if (stack == NULL) return;
+  for (size_t b = 0; b < stack_size(stack); b++) {
+    booknode_t *bn = stack->values[b];
+    printf("\n");
+    print_book(&bn->book);
+  }
+}
+
+void print_search_help() {
+  printf("%sCatalogue Search Areas:%s\n", BWHT, CRESET);
+  printf(" h,  help         print this help message\n");
+  printf(" t,  title        search for a book title\n");
+  printf(" st, subtitle     search for a book subtitle\n");
+  printf(" a,  author       search for author by full name\n");
+  printf(" l,  lastname     search for author by full name, starting\n");
+  printf("                   with last name (e.g. 'Hinton, Matthew')\n");
+  printf(" al, authorlast   search by author last name\n");
+  printf(" af, authorfirst  search by author first name\n");
+  printf(" p,  pub          search for a publisher\n");
+  printf(" y,  year         search by publication year\n");
+  printf(" c,  cat          search for a category or list of categories\n");
+  printf(" lc, location     search by location\n");
+}
+
+// write help message
+void print_help() {
+  printf("help not implemented yet\n");
+  printf("\n");
 }

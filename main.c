@@ -52,11 +52,6 @@ void print_catalogue(const library_t *library) {
   catalogue_print_all_categories(library->catalogue);
 }
 
-void print_help() {
-  printf("\n");
-  printf("\n");
-}
-
 bool command(const string_t *cmd, library_t *library, FILE *f) {
   if (cmd->len == 0) return false;
   const char *buf = (char *)cmd->value;
@@ -70,7 +65,7 @@ bool command(const string_t *cmd, library_t *library, FILE *f) {
   } else if (strcmp(buf, "t") == 0 || strcmp(buf, "titles") == 0) {
     printf("%sTitles:%s\n", BWHT, CRESET);
     catalogue_print_all_titles(library->catalogue);
-  } else if (strcmp(buf, "s") == 0 || strcmp(buf, "subtitles") == 0) {
+  } else if (strcmp(buf, "st") == 0 || strcmp(buf, "subtitles") == 0) {
     printf("%sSubtitles:%s\n", BWHT, CRESET);
     catalogue_print_all_subtitles(library->catalogue);
   } else if (strcmp(buf, "a") == 0 || strcmp(buf, "authors") == 0) {
@@ -98,6 +93,8 @@ bool command(const string_t *cmd, library_t *library, FILE *f) {
     add_book(library, f);
   } else if (strcmp(buf, "addbooks") == 0 || strcmp(buf, "add books") == 0) {
     add_books(library, f);
+  } else if (strcmp(buf, "s") == 0 || strcmp(buf, "search") == 0) {
+    catalogue_search(library->catalogue);
   } else {
     printf("\nUnknown command\n");
   }
